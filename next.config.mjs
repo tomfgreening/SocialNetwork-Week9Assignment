@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    serverComponentsExternalPackages: ["@clerk/nextjs"],
-  },
-};
+const nextConfig = {};
 
 export default nextConfig;
