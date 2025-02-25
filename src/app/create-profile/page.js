@@ -1,7 +1,7 @@
 import { revalidatePath } from "next/cache";
 import { db } from "../../utilities/dbconnection";
 import { redirect } from "next/dist/server/api-utils";
-export default function CreateUserProfilePage() {
+export default async function CreateUserProfilePage() {
   "use server";
   async function handleSubmit(formValues) {
     const bio = formValues.get("bio");
