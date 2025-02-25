@@ -1,5 +1,5 @@
 import { db } from "@/utilities/dbconnection";
-export default function NewPingForm() {
+export default async function NewPingForm() {
   "use server";
   async function handleSubmit(formValues) {
     const post_title = formValues.get("post_title");
